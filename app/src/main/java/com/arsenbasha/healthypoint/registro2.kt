@@ -36,7 +36,7 @@ class registro2 : Fragment() {
             findNavController().navigate(R.id.action_registro2_to_registro, null, options)
         }
         view.findViewById<Button>(R.id.RegistroEntrar_btn)?.setOnClickListener {
-            findNavController().navigate(R.id.mainFragment, null, options)
+            findNavController().navigate(R.id.action_registro2_to_inicio, null, options)
         }
     }
 }

@@ -1,6 +1,7 @@
 package com.arsenbasha.healthypoint
 
 import android.os.Bundle
+import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,14 +28,16 @@ class mainFragment : Fragment() {
             anim {
                 enter = R.anim.entrar
                 exit = R.anim.salir
-                popExit=R.anim.derecha
-                popEnter=R.anim.izquierda
+                popExit = R.anim.derecha
+                popEnter = R.anim.izquierda
 
             }
         }
         view.findViewById<Button>(R.id.Registro_btn)?.setOnClickListener {
             findNavController().navigate(R.id.registro, null, options)
         }
-
+        view.findViewById<Button>(R.id.Entrar_btn)?.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_inicio, null, options)
+        }
     }
 }
