@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">HealthyPoint</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="IniciarSesion">Iniciar Sesión</string>
+    <string name="userName">Nombre de usuario</string>
+    <string name="userPassword">Contraseña</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nombreNewUser">Nombre</string>
+    <string name="apellidoNewUser">Apllido</string>
+    <string name="mailNewUser">Correo</string>
+    <string name="Registro">Registro</string>
+    <string name="Entrar">Entrar</string>
+    <string name="Cancel">Cancelar</string>
+    <string name="next">Siguiente</string>
+    <string name="correo">Correo</string>
+    <string name="Bienvenido">Bienvenido</string>
+    <string name="back">Atras</string>
+    <string name="AbautUs">Quienes Somos</string>
+    <string name="Settings">Ajustes</string>
+    <string name="home">home</string>
+    <string name="admin">Leandro Paredes</string>
+    <string name="mailAdmin">leandroparedes0721@gmial.com</string>
+    <string name="des">Projecto Healthy Point inicio</string>
+
+
 </resources>

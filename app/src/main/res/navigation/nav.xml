@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.arsenbasha.healthypoint.mainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro"
+        android:name="com.arsenbasha.healthypoint.registro"
+        android:label="registro"
+        tools:layout="@layout/registro">
+
+        <action
+            android:id="@+id/action_registro_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/entrar"
+            app:exitAnim="@anim/salir"
+            app:popEnterAnim="@anim/derecha"
+            app:popExitAnim="@anim/izquierda" />
+        <action
+            android:id="@+id/action_registro_to_registro2"
+            app:destination="@id/registro2"
+            app:enterAnim="@anim/entrar"
+            app:exitAnim="@anim/salir"
+            app:popEnterAnim="@anim/derecha"
+            app:popExitAnim="@anim/izquierda" />
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+        <argument
+            android:name="apellido"
+            app:argType="string" />
+        <argument
+            android:name="correo"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro2"
+        android:name="com.arsenbasha.healthypoint.registro2"
+        android:label="registro2"
+        tools:layout="@layout/registro2">
+        <action
+            android:id="@+id/action_registro2_to_registro"
+            app:destination="@id/registro"
+            app:enterAnim="@anim/entrar"
+            app:exitAnim="@anim/salir"
+            app:popEnterAnim="@anim/derecha"
+            app:popExitAnim="@anim/izquierda" />
+        <action
+            android:id="@+id/action_registro2_to_inicio"
+            app:destination="@id/inicio" />
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+        <argument
+            android:name="apellido"
+            app:argType="string" />
+        <argument
+            android:name="correo"
+            app:argType="string" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="pass"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutme"
+        android:name="com.arsenbasha.healthypoint.aboutme"
+        android:label="fragment_aboutme"
+        tools:layout="@layout/fragment_aboutme" />
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.arsenbasha.healthypoint.inicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" />
+</navigation>
