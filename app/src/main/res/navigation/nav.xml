@@ -27,6 +27,8 @@
             app:exitAnim="@anim/salir"
             app:popEnterAnim="@anim/derecha"
             app:popExitAnim="@anim/izquierda" />
+
+
         <action
             android:id="@+id/action_registro_to_registro2"
             app:destination="@id/registro2"

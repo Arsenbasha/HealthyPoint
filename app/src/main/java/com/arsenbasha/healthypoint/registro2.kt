@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navOptions
@@ -36,6 +37,7 @@ class registro2 : Fragment() {
             findNavController().navigate(R.id.action_registro2_to_registro, null, options)
         }
         view.findViewById<Button>(R.id.RegistroEntrar_btn)?.setOnClickListener {
+            Toast.makeText(context,"Usuario registrado Correctamente" , Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_registro2_to_inicio, null, options)
         }
     }
