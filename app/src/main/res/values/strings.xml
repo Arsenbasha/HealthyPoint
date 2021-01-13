@@ -25,4 +25,14 @@
     <string name="Dias">Dias de entrenamiento</string>
 
 
+    <string name="lorem">
+
+
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec imperdiet enim, vel maximus tortor. Proin at mi tempor, scelerisque tellus nec, varius ipsum. Vestibulum ultricies leo non magna elementum sagittis quis nec mauris. In eu mollis felis. Ut ullamcorper eget odio nec iaculis. Proin faucibus tellus sit amet dui congue convallis. Sed dui sapien, dictum id sollicitudin vel, interdum non lectus. Maecenas dictum eros sit amet tellus pellentesque interdum. Nunc eget leo ante. Proin volutpat venenatis ex, et suscipit libero pulvinar ut. Fusce porta sed ligula vitae elementum. Fusce ut justo at mauris tristique sodales in vel arcu. Nullam auctor mattis nisi et blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum elementum lacus ac lacinia porttitor. Nullam ac nibh velit. Suspendisse laoreet congue mi id blandit. Vivamus ullamcorper et dolor sed aliquam. Sed ac magna non dolor lacinia sodales id eu odio. Donec imperdiet lacus quis purus condimentum, et mollis risus sagittis. Aliquam sed diam ipsum. Suspendisse pellentesque velit vel quam gravida suscipit. Praesent lobortis, arcu in suscipit feugiat, lectus mauris tristique leo, sit amet euismod arcu sem eget turpis. Nam quis leo sed diam dignissim hendrerit vel sit amet leo. Curabitur libero diam, imperdiet eget nisl ut, tincidunt vestibulum leo. Donec euismod nulla urna, ac varius libero eleifend quis. Morbi ac risus quis magna elementum cursus. Morbi nec diam sem. Aliquam laoreet magna leo, ut pharetra lacus lacinia a. Nunc ornare eget leo vel pulvinar. Suspendisse tincidunt justo a urna efficitur dignissim. Nulla facilisi. Praesent in leo enim. Praesent non porta ante. Vivamus eu feugiat augue. Phasellus vitae leo augue. Donec imperdiet dui nec ex scelerisque, quis elementum neque egestas. Mauris at interdum diam. Etiam dictum bibendum malesuada. Aenean vitae turpis in est fermentum pharetra. Aenean eu magna varius, lobortis mi a, luctus ante. Integer ut mi iaculis, cursus magna mollis, ultrices enim. Aliquam eu tincidunt ligula. Mauris feugiat congue eros in finibus. Sed egestas, nulla sit amet placerat congue, nisi risus viverra nisi, quis posuere ligula eros id lectus.
+    </string>
+    <string name="Crecion">Creacion de Usuario</string>
+    <string name="motion">Motion Layout</string>
+
+
 </resources>

@@ -86,5 +86,18 @@
         android:id="@+id/inicio"
         android:name="com.arsenbasha.healthypoint.inicio"
         android:label="fragment_inicio"
-        tools:layout="@layout/fragment_inicio" />
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicio_to_motionlayout"
+            app:destination="@id/motionlayout" />
+    </fragment>
+    <fragment
+        android:id="@+id/motionlayout"
+        android:name="com.arsenbasha.healthypoint.list"
+        android:label="motionlayout"
+        tools:layout="@layout/list" >
+        <action
+            android:id="@+id/action_motionlayout_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
 </navigation>

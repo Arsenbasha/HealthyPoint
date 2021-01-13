@@ -1,12 +1,14 @@
 package com.arsenbasha.healthypoint
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.ListView
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.navOptions
 
 
 class inicio : Fragment() {
@@ -16,17 +18,27 @@ class inicio : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view: View = inflater.inflate(R.layout.fragment_inicio, container, false)
-        val arrayAdapter: ArrayAdapter<*>
-        val diasSemana =
-            mutableListOf("lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo")
-        val listaSemana = view.findViewById<ListView>(R.id.listaSemana)
-
-        arrayAdapter =
-            ArrayAdapter(view.context, android.R.layout.simple_expandable_list_item_1, diasSemana)
-        listaSemana.adapter =arrayAdapter
-        return view
+        return inflater.inflate(R.layout.fragment_inicio, container, false)
     }
 
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        (activity as AppCompatActivity?)!!.supportActionBar!!.title = "Leandro Paredes"
+        (activity as AppCompatActivity?)!!.supportActionBar!!.subtitle = "Quienes somos"
+        val options = navOptions {
+            anim {
+                enter = R.anim.entrar
+                exit = R.anim.salir
+                popExit = R.anim.derecha
+                popEnter = R.anim.izquierda
+            }
+        }
+        view.findViewById<Button>(R.id.back)?.setOnClickListener {
+            findNavController().navigate(R.id.mainFragment, null, options)
+        }
+        view.findViewById<Button>(R.id.inicio_btn)?.setOnClickListener {
+            findNavController().navigate(R.id.action_inicio_to_motionlayout, null, options)
+        }
+    }
 }

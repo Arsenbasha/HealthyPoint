@@ -9,5 +9,9 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
+    <style name="carga" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/health</item>
+
+    </style>
 
 </resources>
