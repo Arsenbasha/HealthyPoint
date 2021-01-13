@@ -20,7 +20,6 @@ class mainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view: View = inflater.inflate(R.layout.fragment_main, container, false)
-
         (activity as AppCompatActivity?)!!.supportActionBar!!.title = "Leandro Paredes"
         (activity as AppCompatActivity?)!!.supportActionBar!!.subtitle = "Inicio de sesión"
         return view

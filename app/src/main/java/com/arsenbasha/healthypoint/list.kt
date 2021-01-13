@@ -21,7 +21,6 @@ class list : Fragment() {
     ): View? {
         (activity as AppCompatActivity?)!!.supportActionBar!!.title = "Leandro Paredes"
         (activity as AppCompatActivity?)!!.supportActionBar!!.subtitle = "Lista de entrenamiento"
-
         val view: View = inflater.inflate(R.layout.list, container, false)
         val arrayAdapter: ArrayAdapter<*>
         val diasSemana =

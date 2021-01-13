@@ -30,15 +30,12 @@ class registro : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         val options = navOptions {
             anim {
                 enter = R.anim.derecha
                 exit = R.anim.salir
                 popExit = R.anim.izquierda
                 popEnter = R.anim.entrar
-
-
             }
         }
         view.findViewById<Button>(R.id.Registro2_btn)?.setOnClickListener {

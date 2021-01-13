@@ -18,26 +18,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setTheme(R.style.AppTheme)
         setContentView(R.layout.navegacion)
-
-
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
         val host: NavHostFragment = supportFragmentManager
             .findFragmentById(R.id.navFragment) as NavHostFragment? ?: return
         val navController = host.navController
         appBarConfiguration = AppBarConfiguration(navController.graph)
-
-
-
-
-
-        appBarConfiguration = AppBarConfiguration(navController.graph)
-
-
         findViewById<Toolbar>(R.id.toolbar)
             .setupWithNavController(navController, appBarConfiguration)
-
-
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
